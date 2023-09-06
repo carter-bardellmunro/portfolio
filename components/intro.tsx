@@ -1,5 +1,6 @@
 'use client';
 
+import { useSectionInView } from '@/lib/hooks';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -9,8 +10,14 @@ import { FaGithubSquare } from 'react-icons/fa';
 import { HiDownload } from 'react-icons/hi';
 
 const Intro = () => {
+  const { ref } = useSectionInView('Home', 0.5);
+
   return (
-    <section className="mb-28 max-w-[50rem] text-center sm:mb-0">
+    <section
+      ref={ref}
+      id="home"
+      className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]"
+    >
       <div className="flex items-center justify-center">
         <div className="relative">
           <motion.div
@@ -73,14 +80,26 @@ const Intro = () => {
           Contact me here{' '}
           <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
         </Link>
-        <a className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 transition cursor-pointer border border-black/10" href="/CV.pdf" download>
+        <a
+          className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 transition cursor-pointer border border-black/10"
+          href="/CV.pdf"
+          download
+        >
           Download CV{' '}
           <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
         </a>
-        <a className="bg-white px-7 p-4 text-gray-700 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:text-gray-950 hover:scale-[1.15] transition cursor-pointer border border-black/10" href="https://www.linkedin.com/in/carter-bardell-munro-b20a27123/" target="_blank">
+        <a
+          className="bg-white px-7 p-4 text-gray-700 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:text-gray-950 hover:scale-[1.15] transition cursor-pointer border border-black/10"
+          href="https://www.linkedin.com/in/carter-bardell-munro-b20a27123/"
+          target="_blank"
+        >
           <BsLinkedin />
         </a>
-        <a className="bg-white px-7 p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:text-gray-950 hover:scale-[1.15] transition cursor-pointer border border-black/10" href="https://github.com/carter-bardellmunro" target="_blank">
+        <a
+          className="bg-white px-7 p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:text-gray-950 hover:scale-[1.15] transition cursor-pointer border border-black/10"
+          href="https://github.com/carter-bardellmunro"
+          target="_blank"
+        >
           <FaGithubSquare />
         </a>
       </motion.div>

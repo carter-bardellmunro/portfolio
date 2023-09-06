@@ -1,18 +1,24 @@
-"use client"
+'use client';
 
 import React from 'react';
 import SectionHeader from './section-header';
 import { motion } from 'framer-motion';
+import { useSectionInView } from '@/lib/hooks';
 
 const About = () => {
+  const { ref } = useSectionInView('About');
+
   return (
-    <motion.section className="mb-28 max-w-[45rem] text-center leading-8 sm:mb-40" 
+    <motion.section
+      ref={ref}
+      className="mb-28 max-w-[45rem] text-center leading-8 sm:mb-40 scroll-mt-28"
       initial={{ opacity: 0, y: 100 }}
-      animate={{ opacity: 1, y:0 }}
+      animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.175 }}
+      id="about"
     >
       <SectionHeader text="About Me" />
-      <p className="mb-3 ">
+      <p className="mb-3">
         After pursuing a career in{' '}
         <span className="font-medium">Marketing</span> for five years, I felt I
         need a change. Knowing the parts of marketing I enjoyed and realising I
@@ -29,9 +35,10 @@ const About = () => {
           TypeScript, React, Next.js, Node.js, and Chakra UI
         </span>
         . I am also familiar with React Native, Redux, and Tailwind CSS, among
-        others, and I am always looking to learn new technologies. I am currently
-        looking for a <span className="font-medium">full-time position</span> as
-        a software developer.
+        others, and I am always looking to learn new technologies. I am
+        currently looking for a{' '}
+        <span className="font-medium">full-time position</span> as a software
+        developer.
       </p>
 
       <p>
@@ -39,7 +46,8 @@ const About = () => {
         playing video games, reading books, and listening to my records. I am
         currently learning about{' '}
         <span className="font-medium">history and philosophy</span>. I&apos;m
-        also learning/teaching myself Spanish as I would like to be fluent in this language one day.
+        also learning/teaching myself Spanish as I would like to be fluent in
+        this language one day.
       </p>
     </motion.section>
   );
