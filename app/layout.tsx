@@ -1,5 +1,6 @@
 import './globals.css';
 import { Inter } from 'next/font/google';
+import { Analytics } from '@vercel/analytics/react'
 import Header from '@/components/header';
 import ActiveSectionContextProvider from '@/context/active-section-context';
 import { Toaster } from 'react-hot-toast';
@@ -33,6 +34,7 @@ export default function RootLayout({
             <Footer />
             <Toaster position="top-right" />
             <ThemeSwitch />
+            <Analytics />
           </ActiveSectionContextProvider>
         </ThemeContextProvider>
       </body>
