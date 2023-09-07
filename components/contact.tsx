@@ -30,7 +30,7 @@ const Contact = () => {
       }}
     >
       <SectionHeader text="Contact me" />
-      <p className="tex-gray-700 -mt-5">
+      <p className="tex-gray-700 -mt-5 dark:text-white/80">
         Please contact me directly at{' '}
         <a className="underline" href="mailto:cartermunro11@gmail.com">
           cartermunro11@gmail.com
@@ -39,7 +39,7 @@ const Contact = () => {
       </p>
 
       <form
-        className="mt-10 flex flex-col"
+        className="mt-10 flex flex-col dark:text-black"
         action={async (formData) => {
           const { data, error } = await sendEmail(formData);
 
@@ -52,7 +52,7 @@ const Contact = () => {
         }}
       >
         <input
-          className="h-14 px-4 rounded-lg borderBlack"
+          className="h-14 px-4 rounded-lg borderBlack dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
           name="senderEmail"
           type="email"
           required
@@ -60,7 +60,7 @@ const Contact = () => {
           placeholder="Your email"
         />
         <textarea
-          className="h-52 my-3 rounded-lg borderBlack p-4"
+          className="h-52 my-3 rounded-lg borderBlack p-4 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
           name="message"
           placeholder="Your message"
           required
