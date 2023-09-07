@@ -63,7 +63,7 @@ const Intro = () => {
         <span className="font-bold">Hi, I&apos;m Carter.</span> I&apos;m a{' '}
         <span className="font-bold">Full Stack Developer</span> based out of{' '}
         <span className="font-bold">Auckland, NZ</span>. I enjoy working on a
-        range of different projects. Some of my strengths are{' '}
+        range of different projects. Some of my skills are{' '}
         <span className="underline">React, TypeScript, and Next.js</span>.
       </motion.h1>
 
@@ -88,7 +88,7 @@ const Intro = () => {
         </Link>
         <a
           className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
-          href="/CV.pdf"
+          href="/CarterBardellMunroResume.pdf"
           download
         >
           Download CV{' '}
