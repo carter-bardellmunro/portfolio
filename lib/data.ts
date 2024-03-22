@@ -2,6 +2,7 @@ import React from 'react';
 import { CgWorkAlt } from 'react-icons/cg';
 import { FaReact } from 'react-icons/fa';
 import { LuGraduationCap } from 'react-icons/lu';
+import { SiTypescript } from "react-icons/si";
 import resonate from '@/public/resonate.png'
 
 export const links = [
@@ -55,6 +56,14 @@ export const experiencesData = [
       "I worked as a Full Stack Enginner—mainly on frontend porjects—for 8 months. I worked across two projects with our first stack being React / TypeScript / Next.js / Chakra UI and the next being React Native / TypeScript. ",
     icon: React.createElement(FaReact),
     date: 'Jan 2022 - Aug 2022',
+  },
+  {
+    title: 'Full Stack Developer @ Maker.Tech',
+    location: 'Auckland, NZ',
+    description:
+      "I currently work as a full stack developer across a range of different projects for different clients. Our main tech stach is TypeScript / React / Next.js / Contentful / GraphQL / AWS",
+    icon: React.createElement(SiTypescript),
+    date: 'Oct 2023 - Present',
   },
 ] as const;
 

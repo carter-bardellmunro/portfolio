@@ -35,10 +35,8 @@ const About = () => {
           TypeScript, React, Next.js, Node.js, and Chakra UI
         </span>
         . I am also familiar with React Native, Redux, Tailwind CSS, Git, among
-        others, and I am always looking to learn new technologies. I am
-        currently looking for a{' '}
-        <span className="font-medium">full-time position</span> as a software
-        developer.
+        others, and I am always looking to learn new technologies. 
+        {/* I am currently looking for a{' '} <span className="font-medium">full-time position</span> as a software developer. */}
       </p>
 
       <p>
