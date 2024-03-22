@@ -78,14 +78,17 @@ export const projectsData = [
 ] as const;
 
 export const skillsData = [
-  'HTML',
-  'CSS',
   'JavaScript',
   'TypeScript',
   'React',
+  'Node.js',
+  'HTML',
+  'CSS',
   'React Native',
   'Next.js',
-  'Node.js',
+  'Vercel',
+  'GraphQL',
+  'Contentful',
   'Git',
   'Chakra UI',
   'Tailwind',
