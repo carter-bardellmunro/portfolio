@@ -12,7 +12,7 @@ import { useActiveSectionContext } from '@/context/active-section-context';
 
 const Intro = () => {
   const { ref } = useSectionInView('Home', 0.5);
-  const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext()
+  const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
 
   return (
     <section
@@ -62,7 +62,7 @@ const Intro = () => {
       >
         <span className="font-bold">Hi, I&apos;m Carter.</span> I&apos;m a{' '}
         <span className="font-bold">Full Stack Developer</span> based out of{' '}
-        <span className="font-bold">Auckland, NZ</span>. I enjoy working on a
+        <span className="font-bold">London, UK</span>. I enjoy working on a
         range of different projects. Some of my skills are{' '}
         <span className="underline">React, TypeScript, and Next.js</span>.
       </motion.h1>
@@ -79,8 +79,8 @@ const Intro = () => {
           href="#contact"
           className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 transition"
           onClick={() => {
-            setActiveSection("Contact");
-            setTimeOfLastClick(Date.now())
+            setActiveSection('Contact');
+            setTimeOfLastClick(Date.now());
           }}
         >
           Contact me here{' '}
@@ -88,7 +88,7 @@ const Intro = () => {
         </Link>
         <a
           className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
-          href="/CarterBardellMunroResume.pdf"
+          href="/CarterResume25.pdf"
           download
         >
           Download CV{' '}
