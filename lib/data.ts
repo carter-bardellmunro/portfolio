@@ -59,10 +59,10 @@ export const experiencesData = [
     date: 'Jan 2022 - Aug 2022',
   },
   {
-    title: 'Full Stack Developer @ Maker.Tech',
+    title: 'Full Stack Developer @ MakerTech',
     location: 'Auckland, NZ',
     description:
-      'I currently work as a full stack developer across a range of different projects for different clients. Our main tech stach is TypeScript / React / Next.js / Contentful / GraphQL / AWS',
+      'I worked as a Full Stack Developer across a range of different projects for different clients. The main tech stach was TypeScript / React / Next.js / Contentful / GraphQL / AWS',
     icon: React.createElement(SiTypescript),
     date: 'Oct 2023 - Jan 2026',
   },
