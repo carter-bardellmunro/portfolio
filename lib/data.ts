@@ -4,6 +4,7 @@ import { FaReact } from 'react-icons/fa';
 import { LuGraduationCap } from 'react-icons/lu';
 import { SiTypescript } from 'react-icons/si';
 import resonate from '@/public/resonate.png';
+import todo from '@/public/todo.png';
 
 export const links = [
   {
@@ -63,7 +64,7 @@ export const experiencesData = [
     description:
       'I currently work as a full stack developer across a range of different projects for different clients. Our main tech stach is TypeScript / React / Next.js / Contentful / GraphQL / AWS',
     icon: React.createElement(SiTypescript),
-    date: 'Oct 2023 - Present',
+    date: 'Oct 2023 - Jan 2026',
   },
 ] as const;
 
@@ -75,16 +76,23 @@ export const projectsData = [
     tags: ['React', 'Redux', 'SQLite', 'Sass', 'Knex.js', 'Express.js'],
     imageUrl: resonate,
   },
+  {
+    title: 'Todo App',
+    description:
+      'Full-stack todo application with a React frontend, GraphQL backend, PostgreSQL via Prisma, Auth0 authentication, and weather enrichment for tasks.',
+    tags: ['TypeScript', 'React', 'GraphQL', 'Prisma', 'ChakraUI', 'Auth0'],
+    imageUrl: todo,
+  },
 ] as const;
 
 export const skillsData = [
   'TypeScript',
   'React',
-  'React Native',
   'Next.js',
   'Node.js',
-  'GraphQL',
   'Vercel',
+  'GraphQL',
+  'React Native',
   'Gatsby',
   'Contentful',
   'Storybook.js',
