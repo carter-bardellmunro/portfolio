@@ -31,9 +31,9 @@ const Intro = () => {
             }}
           >
             <Image
-              src="/sanfrancisco.jpg"
-              width={150}
-              height={150}
+              src="/brasov.jpg"
+              width={225}
+              height={225}
               quality={95}
               priority={true}
               className="h-30 w-30 rounded-lg object-cover border-[0.35rem] border-white shadow-xl "
@@ -41,7 +41,7 @@ const Intro = () => {
             />
           </motion.div>
           <motion.span
-            className="absolute bottom-0 left-0 text-4xl"
+            className="absolute bottom-0 right-0 text-4xl"
             initial={{ opacity: 0, scale: 0 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{
@@ -88,7 +88,7 @@ const Intro = () => {
         </Link>
         <a
           className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
-          href="/CarterResume25.pdf"
+          href="/CarterResume26.pdf"
           download
         >
           Download CV{' '}
